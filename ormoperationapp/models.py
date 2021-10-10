@@ -9,7 +9,7 @@ class Employee(models.Model):
     salary = models.IntegerField()
     mobile = models.BigIntegerField()
     address = models.CharField(max_length=50)
-    age = models.InterField(max_length=20)
+    age = models.IntegerField()
 
     def __str__(self):              # String Representataiuon By Default It Is Unvisuble.....!!
         return self.firstname
